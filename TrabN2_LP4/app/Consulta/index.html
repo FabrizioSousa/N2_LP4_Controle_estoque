@@ -1,0 +1,54 @@
+<div class="row col-md-12">
+    <h1 align="center">Consulta de Estoque</h1>
+    </div>
+   
+
+    <div class="row col-md-12">
+          <label class="col-md-1"> Deletar por ID </label>
+          <input class="col-md-1" id="ID"  ng-model="vm.ID" type="number"  />
+          
+          <button style="left:2%" class="btn btn-primary col-md-1" ng-click="vm.DeletarPorID(vm.ID)">Deletar</button>
+          <div class="col-md-1"></div>
+             </div>
+
+        <div style="padding-top: 2%" class="row col-md-12">
+                <table class="table table-bordered display" >
+                    <thead>
+                        <tr class="clickable-row">
+                            <th>ID</th>
+                            <th>Data</th>
+                            <th>Tipo</th>
+                            <th>Marca</th>
+                            <th>Cor</th>
+                            <th>Tamanho</th>
+                            <th>Valor na Etiqueta</th>
+                            <th>Valor Pago</th>
+                            <th>Preço sugerido</th>
+                            <th>Características</th>
+                            <th>Valor para margem</th>
+                
+                        </tr>
+                        
+                     
+                    </thead>
+                    <tbody ng-repeat = "Pergunta in vm.listquestions" >
+                        <tr class="clickable-row">
+                    <td>{{Pergunta.ID}}</td>
+                    <td>{{Pergunta.Data}}</td>
+                    <td>{{Pergunta.Tipo}}</td>
+                    <td>{{Pergunta.Marca}}</td>
+                    <td>{{Pergunta.Cor}}</td>
+                    <td>{{Pergunta.Tamanho}}</td>
+                    <td>R$ {{Pergunta.Vlr_etiqueta}}</td>
+                    <td>R$ {{Pergunta.Vlr_Pago}}</td>
+                    <td>R$ {{Pergunta.Vlr_Preco}}</td>
+                    <td>{{Pergunta.Caracteristicas}}</td>
+                    <td>R$ {{Pergunta.Vlr_Margem}}</td>
+                </tr>
+                </tbody>
+                </table>
+            </div>
+        <!-- <button class="btn btn-danger" ng-click="vm.DeleteQuestion(Pergunta)">Delete</button> -->
+    
+    
+

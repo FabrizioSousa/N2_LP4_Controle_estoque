@@ -1,0 +1,69 @@
+<div class="row col-md-12">
+    <h1 align="center">Cadastro de estoque</h1>
+    </div>
+ 
+    <div class="row col-md-12" style="padding-top: 2%">
+       
+              
+                <input id="ID"  placeholder="ID" ng-model="vm.id" type="number" class="col-md-1" />
+            
+               <div class="col-md-1"></div>
+               
+                <input id="Data" type="date"  ng-model="vm.data"  class=" col-md-2" />
+                <div class="col-md-1"></div>
+                <select id="cbTipo" class=" col-md-2" ng-model="vm.cbTipo">
+                    <option>Camisa</option>
+                    <option>Camiseta</option>
+                    <option>Shorts</option>
+                    <option>Vestido</option>
+                    <option>Saia</option>
+                    <option>Calça</option>
+                </select>
+                <!-- <input id="pergunta3" placeholder="Marca" ng-model="vm.question" type="text" class=" col-md-2" /> -->
+                <div class="col-md-1"></div>
+                <input id="Marca" placeholder="Marca" ng-model="vm.Marca" type="text" class=" col-md-4" />
+            </div>
+
+            <div class="row col-md-12" style="padding-top: 2%">
+                <input id="Cor" placeholder="Cor" ng-model="vm.Cor" type="text" class="col-md-1" />
+                <div class="col-md-1"></div>
+                <input id="Tamanho" placeholder="Tamanho" ng-model="vm.Tamanho" type="text" class="col-md-1" />
+                <div class="col-md-1"></div>
+                <input id="etiqueta" placeholder="Valor de etiqueta" ng-model="vm.Vlr_Etiqueta" type="number" class="col-md-2" />
+                <div class="col-md-1"></div>
+                <input id="Pago" placeholder="Valor pago" ng-model="vm.Vlr_Pago" type="number" class="col-md-2" />
+                <div class="col-md-1"></div>
+                <input id="Preco" placeholder="Preço sugerido" ng-model="vm.Vlr_Preco" type="number" class="col-md-2" />
+                <!-- <textarea style="resize:none" class="col-md-5" placeholder="Caracteristicas"></textarea> -->
+              
+            </div>
+            <div class="row col-md-12" style="padding-top: 2%">
+            
+                <textarea id="Carac" ng-model="vm.Caracteristicas" style="resize:none" class="col-md-12" rows="10" placeholder="Caracteristicas"></textarea>
+              
+            </div>
+  
+    <div class="row col-md-12">
+                <div class="form-group">
+                </div>
+                <div style="margin-top:2%" class="row col-md-12">
+                    <div class="col-md-2"></div>
+                   
+                <button  class="btn btn-primary col-md-4" ng-click="vm.GravaDados()">Salvar</button>
+                <div class="col-md-2"></div>
+                <button  class="btn btn-primary col-md-4" ng-click="vm.Limpar()">Limpar</button>
+              
+                </div>
+            </div>
+          
+    
+              
+    
+           
+        </form>
+        <!-- <script src="app-services/perguntas.service.js"></script> -->
+    </div>
+    
+        
+    
+    
