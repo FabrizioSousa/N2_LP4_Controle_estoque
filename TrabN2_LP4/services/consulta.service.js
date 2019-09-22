@@ -12,7 +12,7 @@ var service = {};
 service.create = create;
 service.getAll = getAll;
 service.delete = _delete;
-service.qtd = qtd;
+
 module.exports = service;
 
 function create(questionParam) {
